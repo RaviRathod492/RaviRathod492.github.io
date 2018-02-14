@@ -6,8 +6,12 @@
 	text-align: center;
 }
 
-.effect
+.container div
 {
-	padding: 20px;
 	background-color: aqua;
+	padding: 20px;
+}
+
+.container > div:nth-child(even) {
+	background-color: #ddd;
 }
