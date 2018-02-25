@@ -1,0 +1,104 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.navbar
+		{
+			display: grid;
+    		grid-template-columns: repeat(4, 1fr);
+    		height: 30px;
+    		list-style-type: none;
+    		background: aqua;
+    		text-align: center;
+    		padding: 20px;
+    	}
+
+    	.navbar > li
+    	{
+    		
+    	}
+
+    	.menu
+    	{
+    		display: none;
+    		
+    		padding-left: 0px;
+    		background-color: blue;
+    		list-style-type: none;
+    		
+    	}
+
+    	 .submenu:hover .menu
+    	{
+    		display: grid;
+    		grid-template-columns: 1fr;
+    		grid-template-rows: auto;
+    		list-style-type: none;
+    		background-color: blue;
+    		
+    	}
+
+    	
+    	
+
+    	.menu > li
+    	{
+    		padding: 20px;
+    		
+
+    	}
+
+    	@media screen and (max-width: 900px)
+    	{
+    		.navbar, .menu:hover
+    		{
+    			display: block;
+    			text-align: left;
+    			padding: 0px;
+
+    		}
+
+    		.navbar
+    		{
+    			background-color: aqua;
+    		}
+    		.navbar > li
+    		{
+    			padding: 20px;
+    			background-color: aqua;
+    		}
+    		.menu
+    		{
+    			display: none;
+    		}
+    	}
+	</style>
+	</head>
+
+	<body>
+		
+		<header>
+			
+			<nav>
+				<ul class="navbar">
+					
+						<li>Menu 1</li>
+						<li>Menu 2</li>
+						<li class="submenu">Drop Down
+						
+							<ul class="menu">
+								<li>Sub Menu 1</li>
+								<li>Sub Menu 2</li>
+								<li>Sub Menu 3</li>
+							</ul>
+						
+						</li>
+						<li>Menu 3</li>
+					
+				</ul>
+			</nav>
+
+		</header>
+
+	</body>
+</html>
